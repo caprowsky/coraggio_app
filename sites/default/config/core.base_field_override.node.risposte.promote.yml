@@ -1,0 +1,22 @@
+uuid: d23dc2a3-e0a5-49b7-96b7-723cf0b75575
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.risposte
+id: node.risposte.promote
+field_name: promote
+entity_type: node
+bundle: risposte
+label: 'Promosso alla prima pagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Acceso
+  off_label: Spento
+field_type: boolean

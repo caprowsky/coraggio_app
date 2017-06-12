@@ -1,0 +1,21 @@
+uuid: 1f5d5994-8ceb-4ad9-b919-e6427c8d62c9
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.risposte.field_tag
+    - node.type.risposte
+  module:
+    - user
+id: node.risposte.teaser
+targetEntityType: node
+bundle: risposte
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_tag: true
+  langcode: true

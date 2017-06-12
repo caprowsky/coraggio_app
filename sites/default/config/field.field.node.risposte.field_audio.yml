@@ -1,0 +1,27 @@
+uuid: 6077c2ed-14f6-4ab0-a19b-3eca0c988c7a
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio
+    - node.type.risposte
+  module:
+    - file
+id: node.risposte.field_audio
+field_name: field_audio
+entity_type: node
+bundle: risposte
+label: audio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp3
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

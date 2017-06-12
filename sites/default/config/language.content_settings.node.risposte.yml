@@ -1,0 +1,11 @@
+uuid: 94eab3ab-728d-4ebb-a313-2a99b8690358
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.risposte
+id: node.risposte
+target_entity_type_id: node
+target_bundle: risposte
+default_langcode: site_default
+language_alterable: false

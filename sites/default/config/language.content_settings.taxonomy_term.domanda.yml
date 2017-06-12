@@ -1,0 +1,11 @@
+uuid: 1bbbabc3-49b1-44eb-9237-f9edfc69fea4
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.domanda
+id: taxonomy_term.domanda
+target_entity_type_id: taxonomy_term
+target_bundle: domanda
+default_langcode: site_default
+language_alterable: false

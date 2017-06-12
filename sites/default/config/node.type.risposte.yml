@@ -1,0 +1,17 @@
+uuid: 29d41fef-6d3f-4ac1-931e-0d3e5a07ce02
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Risposte
+type: risposte
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

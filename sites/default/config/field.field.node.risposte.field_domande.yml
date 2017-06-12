@@ -1,0 +1,21 @@
+uuid: ad74ba48-544b-46fb-993e-76d3b5cb82be
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domande
+    - node.type.risposte
+  module:
+    - options
+id: node.risposte.field_domande
+field_name: field_domande
+entity_type: node
+bundle: risposte
+label: Domande
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

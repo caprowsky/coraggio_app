@@ -1,0 +1,18 @@
+uuid: 5d30103e-6be3-4d24-9465-988fac291607
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.risposte
+id: node.risposte.title
+field_name: title
+entity_type: node
+bundle: risposte
+label: Risposta
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

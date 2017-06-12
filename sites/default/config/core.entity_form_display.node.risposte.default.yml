@@ -1,0 +1,91 @@
+uuid: 9bbe00f3-4da2-4ad6-a6a4-8b05cbf15c6f
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.risposte.field_audio
+    - field.field.node.risposte.field_domande
+    - field.field.node.risposte.field_immagine
+    - field.field.node.risposte.field_tag
+    - field.field.node.risposte.field_youtube
+    - image.style.thumbnail
+    - node.type.risposte
+  module:
+    - file
+    - image
+    - youtube
+id: node.risposte.default
+targetEntityType: node
+bundle: risposte
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_audio:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_domande:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_immagine:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_tag:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_youtube:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: youtube
+    region: content
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 250
+      placeholder: 'Inserisci la risposta'
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  path: true
+  promote: true

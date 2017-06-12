@@ -1,0 +1,22 @@
+uuid: f010d1a2-34b8-422e-a48d-8972c65e4124
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.domande
+  module:
+    - facets
+  theme:
+    - bartik
+id: domande
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:domande'
+settings:
+  id: 'facet_block:domande'
+  label: Domande
+  provider: facets
+  label_display: visible
+visibility: {  }

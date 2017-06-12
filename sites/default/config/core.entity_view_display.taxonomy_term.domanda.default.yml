@@ -1,0 +1,22 @@
+uuid: 0fee09ed-d541-4c05-8050-4ccc18405106
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.domanda
+  module:
+    - text
+id: taxonomy_term.domanda.default
+targetEntityType: taxonomy_term
+bundle: domanda
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

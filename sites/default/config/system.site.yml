@@ -1,0 +1,14 @@
+uuid: 31b28db7-20e9-47f6-b515-ed5c97f4d0ba
+name: 'Tutte le storie del coraggio'
+mail: alessandrocapra@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: it
+default_langcode: it
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

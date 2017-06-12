@@ -1,0 +1,9 @@
+uuid: ee225643-d03d-476b-8afb-f8b010490009
+langcode: it
+status: true
+dependencies: {  }
+name: 'Parole chiave'
+vid: domanda
+description: 'Inserisci la domanda'
+hierarchy: 0
+weight: 0

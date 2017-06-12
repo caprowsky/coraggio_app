@@ -1,0 +1,13 @@
+uuid: 52527868-58fc-4010-bac8-3a92f6c7bea2
+langcode: it
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: MLin6S_PsJ7Oo480DxS46D46IM8tqFkkWOLyH7TGByI
+id: comment_unpublish_action
+label: 'Togli dalla pubblicazione il commento'
+type: comment
+plugin: comment_unpublish_action
+configuration: {  }

@@ -1,0 +1,33 @@
+uuid: 3d2c5fad-1421-4d23-87f2-8871b9ec1e19
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_domande
+field_name: field_domande
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Il coraggio è qualcosa di quotidiano o di straordinario?'
+    -
+      value: 2
+      label: 'Cosa definisci coraggioso nella tua vita?'
+    -
+      value: 3
+      label: 'Si può essere coraggiosi e provare paura? Perché?'
+    -
+      value: 4
+      label: 'Scegli una canzone, un film, un libro, un fumetto che richiamo all''idea di coraggio.'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
