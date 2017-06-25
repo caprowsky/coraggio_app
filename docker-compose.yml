@@ -45,18 +45,18 @@ services:
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:drupal.docker.localhost'
 
-#  varnish:
-#    image: wodby/drupal-varnish:4.1-2.0.0
-#    depends_on:
-#      - nginx
-#    environment:
-#      VARNISH_SECRET: secret
-#      VARNISH_BACKEND_HOST: nginx
-#      VARNISH_BACKEND_PORT: 80
-#    labels:
-#      - 'traefik.backend=varnish'
-#      - 'traefik.port=6081'
-#      - 'traefik.frontend.rule=Host:varnish.drupal.docker.localhost'
+  varnish:
+    image: wodby/drupal-varnish:4.1-2.1.0
+    container_name: coraggio_varnish
+    depends_on:
+      - nginx
+    environment:
+      VARNISH_SECRET: secret
+      VARNISH_BACKEND_HOST: nginx
+      VARNISH_BACKEND_PORT: 80
+      VARNISH_MEMORY_SIZE: 1024M
+    ports:
+      - "9999:6081"
 
 #  redis:
 #    image: wodby/redis:3.2-2.0.1
@@ -74,16 +74,16 @@ services:
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:pma.drupal.docker.localhost'
 
-  solr:
-    image: wodby/drupal-solr:8-6.4-2.0.0
+#  solr:
+#    image: wodby/drupal-solr:8-6.4-2.0.0
 #    image: wodby/drupal-solr:8-6.3-2.0.0
 #   image: wodby/drupal-solr:7-5.5-2.0.0
-    environment:
-      SOLR_HEAP: 1024m
-    labels:
-      - 'traefik.backend=solr'
-      - 'traefik.port=8983'
-      - 'traefik.frontend.rule=Host:solr.drupal.docker.localhost'
+#    environment:
+#      SOLR_HEAP: 1024m
+#    labels:
+#      - 'traefik.backend=solr'
+#      - 'traefik.port=8983'
+#      - 'traefik.frontend.rule=Host:solr.drupal.docker.localhost'
 
   mailhog:
     image: mailhog/mailhog
