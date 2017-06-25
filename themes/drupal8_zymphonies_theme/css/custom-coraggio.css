@@ -1,0 +1,11 @@
+li.facet-item {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+li.menu-item {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 1.3em;
+}
