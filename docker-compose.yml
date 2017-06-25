@@ -45,18 +45,18 @@ services:
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:drupal.docker.localhost'
 
-  varnish:
-    image: wodby/drupal-varnish:4.1-2.1.0
-    container_name: coraggio_varnish
-    depends_on:
-      - nginx
-    environment:
-      VARNISH_SECRET: secret
-      VARNISH_BACKEND_HOST: nginx
-      VARNISH_BACKEND_PORT: 80
-      VARNISH_MEMORY_SIZE: 1024M
-    ports:
-      - "9999:6081"
+#  varnish:
+#    image: wodby/drupal-varnish:4.1-2.1.0
+#    container_name: coraggio_varnish
+#    depends_on:
+#      - nginx
+#    environment:
+#      VARNISH_SECRET: secret
+#      VARNISH_BACKEND_HOST: nginx
+#      VARNISH_BACKEND_PORT: 80
+#      VARNISH_MEMORY_SIZE: 1024M
+#    ports:
+#      - "9999:6081"
 
 #  redis:
 #    image: wodby/redis:3.2-2.0.1
