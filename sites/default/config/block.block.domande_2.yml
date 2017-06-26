@@ -1,0 +1,22 @@
+uuid: e25090df-2a42-4aff-bdb3-e61cf810a549
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.domande
+  module:
+    - facets
+  theme:
+    - drupal8_zymphonies_theme
+id: domande_2
+theme: drupal8_zymphonies_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'facet_block:domande'
+settings:
+  id: 'facet_block:domande'
+  label: Domande
+  provider: facets
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: b9e4fff8-2a5f-4abb-abdf-30a3ccdf3430
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets.facet.parole_chiave
+  module:
+    - facets
+  theme:
+    - drupal8_zymphonies_theme
+id: parolechiave
+theme: drupal8_zymphonies_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: 'facet_block:parole_chiave'
+settings:
+  id: 'facet_block:parole_chiave'
+  label: 'Parole chiave'
+  provider: facets
+  label_display: '0'
+visibility: {  }

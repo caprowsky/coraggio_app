@@ -5,13 +5,17 @@ dependencies:
   config:
     - field.storage.node.field_audio
     - field.storage.node.field_immagine
+    - field.storage.node.field_risposta
+    - field.storage.node.field_tag
     - field.storage.node.field_youtube
+    - image.style.large
     - search_api.index.default_index
     - system.menu.account
   module:
     - file
     - image
     - search_api
+    - text
     - youtube
 id: le_storie_del_coraggio
 label: 'Le storie del coraggio'
@@ -52,15 +56,14 @@ display:
       pager:
         type: none
         options:
-          items_per_page: 0
           offset: 0
       style:
         type: grid
         options:
           grouping: {  }
-          columns: 3
+          columns: 1
           automatic_width: true
-          alignment: vertical
+          alignment: horizontal
           col_class_default: true
           col_class_custom: ''
           row_class_default: true
@@ -68,13 +71,10 @@ display:
       row:
         type: fields
       fields:
-        title:
+        field_risposta:
+          id: field_risposta
           table: search_api_index_default_index
-          field: title
-          id: title
-          entity_type: null
-          entity_field: null
-          plugin_id: search_api_field
+          field: field_risposta
           relationship: none
           group_type: group
           admin_label: ''
@@ -107,11 +107,11 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h3
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -120,7 +120,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: text_default
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -137,6 +137,7 @@ display:
           fallback_options:
             link_to_item: false
             multi_separator: ', '
+          plugin_id: search_api_field
         field_audio:
           id: field_audio
           table: search_api_datasource_default_index_entity_node
@@ -256,7 +257,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: large
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -352,8 +353,106 @@ display:
             multi_separator: ', '
           entity_type: node
           plugin_id: search_api_field
+        field_tag_1:
+          id: field_tag_1
+          table: search_api_index_default_index
+          field: field_tag_1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: h2
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            link_to_item: false
+            multi_separator: ', '
+            display_methods:
+              domanda:
+                display_method: label
+                view_mode: default
+              tags:
+                display_method: label
+          plugin_id: search_api_field
       filters: {  }
-      sorts: {  }
+      sorts:
+        search_api_id:
+          id: search_api_id
+          table: search_api_index_default_index
+          field: search_api_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: search_api
+        random:
+          id: random
+          table: views
+          field: random
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: Casuale
+          plugin_id: random
       title: 'Le storie del coraggio'
       header: {  }
       footer: {  }
@@ -362,13 +461,15 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
         - 'config:field.storage.node.field_audio'
         - 'config:field.storage.node.field_immagine'
+        - 'config:field.storage.node.field_risposta'
+        - 'config:field.storage.node.field_tag'
         - 'config:field.storage.node.field_youtube'
   page_1:
     display_plugin: page
@@ -392,11 +493,13 @@ display:
       defaults:
         cache: false
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
       tags:
         - 'config:field.storage.node.field_audio'
         - 'config:field.storage.node.field_immagine'
+        - 'config:field.storage.node.field_risposta'
+        - 'config:field.storage.node.field_tag'
         - 'config:field.storage.node.field_youtube'

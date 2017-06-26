@@ -1,0 +1,22 @@
+uuid: d2969a70-4d29-4f5a-917d-35474faa1378
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina
+  module:
+    - text
+id: node.pagina.body
+field_name: body
+entity_type: node
+bundle: pagina
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,38 @@
+uuid: d77a6430-306e-468d-9e03-f506b8cf7c59
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina.body
+    - field.field.node.pagina.field_immagine
+    - node.type.pagina
+  module:
+    - image
+    - text
+    - user
+id: node.pagina.default
+targetEntityType: node
+bundle: pagina
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_immagine:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

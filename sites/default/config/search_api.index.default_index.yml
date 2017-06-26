@@ -9,6 +9,9 @@ dependencies:
   config:
     - field.storage.node.field_domande
     - field.storage.node.field_tag
+    - field.storage.node.field_immagine
+    - field.storage.node.field_risposta
+    - field.storage.node.field_youtube
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
 _core:
@@ -100,6 +103,39 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_tag
+  field_immagine:
+    label: immagine
+    datasource_id: 'entity:node'
+    property_path: field_immagine
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_immagine
+  field_risposta:
+    label: Risposta
+    datasource_id: 'entity:node'
+    property_path: field_risposta
+    type: text
+    boost: !!float 21
+    dependencies:
+      config:
+        - field.storage.node.field_risposta
+  field_tag_1:
+    label: 'Parole chiave'
+    datasource_id: 'entity:node'
+    property_path: field_tag
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tag
+  field_youtube:
+    label: youtube
+    datasource_id: 'entity:node'
+    property_path: field_youtube
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_youtube
 datasource_settings:
   'entity:node':
     bundles:

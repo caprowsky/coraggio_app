@@ -1,0 +1,21 @@
+uuid: 556efceb-a95e-4f2c-b320-286c3f24e9e9
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_risposta
+    - node.type.risposte
+  module:
+    - text
+id: node.risposte.field_risposta
+field_name: field_risposta
+entity_type: node
+bundle: risposte
+label: Risposta
+description: 'Inserisci la risposta'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

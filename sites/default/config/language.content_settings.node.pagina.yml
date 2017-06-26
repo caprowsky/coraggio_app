@@ -1,0 +1,11 @@
+uuid: 116ca07c-e4df-43ea-9840-7566fadbe3dc
+langcode: it
+status: true
+dependencies:
+  config:
+    - node.type.pagina
+id: node.pagina
+target_entity_type_id: node
+target_bundle: pagina
+default_langcode: site_default
+language_alterable: false

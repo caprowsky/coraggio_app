@@ -1,0 +1,24 @@
+uuid: 2ae4cb0c-3404-49a1-baca-7f5d2a4b6593
+langcode: it
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - drupal8_zymphonies_theme
+id: menuprofiloutente
+theme: drupal8_zymphonies_theme
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menu profilo utente'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

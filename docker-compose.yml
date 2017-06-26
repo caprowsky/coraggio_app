@@ -42,7 +42,7 @@ services:
     volumes:
       - ./:/var/www/html
     ports:
-      - "80" 
+      - "4444:80" 
     labels:
       - 'traefik.backend=nginx'
       - 'traefik.port=80'
