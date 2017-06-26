@@ -23,9 +23,6 @@ settings:
     -
       value: 4
       label: 'Scegli una canzone, un film, un libro, un fumetto che richiamo all''idea di coraggio.'
-    -
-      value: 5
-      label: Film
   allowed_values_function: ''
 module: options
 locked: false
