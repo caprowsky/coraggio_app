@@ -1,11 +1,11 @@
 uuid: 31b28db7-20e9-47f6-b515-ed5c97f4d0ba
-name: 'Tutte le storie del coraggio'
+name: 'Generazione Arcoes'
 mail: alessandrocapra@gmail.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /le-storie-del-coraggio
+  front: /node/16
 admin_compact_mode: false
 weight_select_max: 100
 langcode: it
