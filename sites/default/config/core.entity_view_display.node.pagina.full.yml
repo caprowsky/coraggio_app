@@ -1,8 +1,9 @@
-uuid: d77a6430-306e-468d-9e03-f506b8cf7c59
+uuid: dd3683c4-da86-45a8-a133-92814e92fcac
 langcode: it
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.pagina.body
     - field.field.node.pagina.field_immagine
     - node.type.pagina
@@ -10,10 +11,10 @@ dependencies:
     - image
     - text
     - user
-id: node.pagina.default
+id: node.pagina.full
 targetEntityType: node
 bundle: pagina
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -34,7 +35,5 @@ content:
   links:
     weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
