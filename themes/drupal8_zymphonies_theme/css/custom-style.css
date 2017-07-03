@@ -51,7 +51,6 @@ ul.links.inline li{
 }
 
 .main-header{
-  background: url(../images/welcome_banner_bg.jpg);  
   color: #fff;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -66,7 +65,7 @@ ul.links.inline li{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(21, 22, 26, 0.88);
+
 }
 
 .main-header nav{
