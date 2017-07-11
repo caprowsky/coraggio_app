@@ -1,3 +1,53 @@
+#block-drupal8-zymphonies-theme-branding > div.brand.site-name > div {
+    display: none;
+}
+
+
+
+#block-menuprofiloutente > ul > li:nth-child(2) > a {
+    display: inline-block;
+    padding: 0 calc(0px + 10px);
+    color: #2E9137;
+    background-color: #F39905;
+    text-decoration: none;
+    font: normal normal 700 15px/1.4em futura-lt-w01-book,sans-serif;
+    transition: color 0.4s ease 0s
+}
+
+#block-menuprofiloutente > ul > li > a {
+    display: inline-block;
+    padding: 0 calc(0px + 10px);
+    color: #2E9137;
+    background-color: #F39905;
+    text-decoration: none;
+    font: normal normal 700 15px/1.4em futura-lt-w01-book,sans-serif;
+    transition: color 0.4s ease 0s
+}
+
+#block-menuprofiloutente > ul > li.menu-item.menu-item--active-trail > a {
+    display: inline-block;
+    padding: 0 calc(0px + 10px);
+    color: #009FE3;
+    background-color: #F39905;
+    text-decoration: none;
+    font: normal normal 700 15px/1.4em futura-lt-w01-book,sans-serif;
+    transition: color 0.4s ease 0s
+}
+
+
+
+#block-menuprofiloutente > ul > li:nth-child(1) > a {
+    display: inline-block;
+    padding: 0 calc(0px + 10px);
+    color: #2E9137;
+    background-color: #F39905;
+    text-decoration: none;
+    font: normal normal 700 15px/1.4em futura-lt-w01-book,sans-serif;
+    transition: color 0.4s ease 0s
+}
+
+
+
 li.facet-item {
     display: inline-block;
     padding-right: 10px;
@@ -9,3 +59,18 @@ li.menu-item {
     padding-right: 10px;
     font-size: 1.3em;
 }
+
+#block-domande-2 > ul > li:nth-child(1) > a > span {
+
+    font-size: 1.3em;
+}
+
+#block-facetsactiveentityblock {
+    background-color: #F39905;
+    display: inline-block;
+    float: right;
+    width: auto;
+    padding: 10px;
+}
+
+

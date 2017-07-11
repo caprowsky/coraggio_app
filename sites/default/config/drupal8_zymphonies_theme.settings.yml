@@ -20,6 +20,6 @@ _core:
 langcode: it
 logo:
   use_default: 0
-  path: 'public://logo-pronto-arcoes.png'
+  path: 'public://logo_generazione_arcoes.png'
 favicon:
   use_default: 1

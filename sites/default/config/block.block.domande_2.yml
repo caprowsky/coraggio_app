@@ -11,7 +11,7 @@ dependencies:
 id: domande_2
 theme: drupal8_zymphonies_theme
 region: highlighted
-weight: 0
+weight: -3
 provider: null
 plugin: 'facet_block:domande'
 settings:

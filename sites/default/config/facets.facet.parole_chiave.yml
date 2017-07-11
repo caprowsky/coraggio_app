@@ -18,8 +18,8 @@ facet_source_id: 'search_api:views_page__le_storie_del_coraggio__page_1'
 widget:
   type: links
   config:
-    show_numbers: false
-    soft_limit: 0
+    show_numbers: true
+    soft_limit: 20
 query_operator: or
 use_hierarchy: false
 expand_hierarchy: false
@@ -52,6 +52,17 @@ processor_configs:
         negate: 0
   display_value_widget_order:
     processor_id: display_value_widget_order
+    weights:
+      sort: -10
+    settings:
+      sort: ASC
+  hide_active_items_processor:
+    processor_id: hide_active_items_processor
+    weights:
+      build: -10
+    settings: {  }
+  raw_value_widget_order:
+    processor_id: raw_value_widget_order
     weights:
       sort: -10
     settings:

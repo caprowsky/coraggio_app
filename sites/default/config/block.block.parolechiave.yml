@@ -11,7 +11,7 @@ dependencies:
 id: parolechiave
 theme: drupal8_zymphonies_theme
 region: highlighted
-weight: 0
+weight: -2
 provider: null
 plugin: 'facet_block:parole_chiave'
 settings:
