@@ -52,6 +52,11 @@
     
 }
 
+#block-parolechiave > a {
+    color: #2E9137;
+    
+}
+
 #block-drupal8-zymphonies-theme-content > div > div > div.views-view-grid.horizontal.cols-1.clearfix > div.views-row.clearfix.row-7 > div > h2 > span {
     background-color: #E8EEEC;
     padding: 10px;
