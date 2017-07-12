@@ -155,3 +155,7 @@ li.facet-item .facet-count {
     font-size: 1.4em;
     padding: 10px;
 }
+
+#block-domande-2 .facet-count a {
+    color: grey;
+}
