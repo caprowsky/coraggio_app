@@ -47,6 +47,13 @@
 }
 
 
+#block-drupal8-zymphonies-theme-content > div.views-row.clearfix.row-7 > div > h2 > span {
+    background-color: #E8EEEC;
+    padding: 10px;
+    
+}
+
+
 
 li.facet-item {
     display: inline-block;

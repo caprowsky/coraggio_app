@@ -1,0 +1,22 @@
+uuid: 919799b5-154f-4958-81b3-a8b6ddfb484e
+langcode: it
+status: true
+dependencies:
+  config:
+    - facets_summary.facets_summary.tag_coraggio
+  module:
+    - facets_summary
+  theme:
+    - drupal8_zymphonies_theme
+id: tagcoraggio
+theme: drupal8_zymphonies_theme
+region: highlighted
+weight: -4
+provider: null
+plugin: 'facets_summary_block:tag_coraggio'
+settings:
+  id: 'facets_summary_block:tag_coraggio'
+  label: 'tag coraggio'
+  provider: facets_summary
+  label_display: visible
+visibility: {  }

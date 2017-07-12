@@ -1,0 +1,29 @@
+uuid: 660f71b8-3d02-4d2c-b628-18cb614786b8
+langcode: it
+status: true
+dependencies:
+  config:
+    - search_api.index.default_index
+    - views.view.le_storie_del_coraggio
+  module:
+    - search_api
+id: tag_coraggio
+name: 'tag coraggio'
+facets:
+  parole_chiave:
+    checked: true
+    label: 'Parole chiave'
+    separator: ', '
+    weight: 0
+    show_count: false
+facet_source_id: 'search_api:views_page__le_storie_del_coraggio__page_1'
+processor_configs:
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '-10'
+    settings:
+      text:
+        value: 'Non hai selezionato alcuna domanda o tag.'
+        format: plain_text
+empty_behavior: null

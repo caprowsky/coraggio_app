@@ -18,8 +18,8 @@ module:
   editor: 0
   entity_reference: 0
   facets: 0
-  facets_active_entity_block: 0
   facets_range_widget: 0
+  facets_summary: 0
   field: 0
   field_ui: 0
   file: 0

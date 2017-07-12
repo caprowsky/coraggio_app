@@ -147,6 +147,10 @@ display:
     display_options:
       display_extenders: {  }
       path: search/content
+      cache:
+        type: none
+      defaults:
+        cache: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
