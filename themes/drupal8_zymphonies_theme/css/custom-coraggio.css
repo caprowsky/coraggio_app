@@ -54,47 +54,73 @@
 
 
 #block-tagcoraggio {
-    background-color: gray;
+    background-color: #edf1f7;
     padding: 5px;
     max-width: 300px;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #FE9C00;
 }
 
-li.facet-item .facet-count-1,
-li.facet-item .facet-count-2,
-li.facet-item .facet-count-3 {
+li.facet-item .facet-count-1 {
+    background-color: #009F3E;
     font-size: 1em;
+    color: #ffffff; 
     
 }
 
-li.facet-item .facet-count-4,
-li.facet-item .facet-count-5,
-li.facet-item .facet-count-6 {
+li.facet-item .facet-count-2 {
+    background-color: #FF4656;
     font-size: 1.3em;
     
 }
 
-li.facet-item .facet-count-7,
+li.facet-item .facet-count-3 {
+    background-color: #A7C8EE;
+    font-size: 1.6em;
+    
+}
+
+li.facet-item .facet-count-4 {
+    background-color: #FE9C00;
+    font-size: 1.9em;
+    
+}
+
+li.facet-item .facet-count-5 {
+    background-color: #009F3E;
+    font-size: 2.2em;
+    
+}
+
+li.facet-item .facet-count-6 {
+    background-color: #FF4656;
+    font-size: 2.5em;
+    
+}
+
+li.facet-item .facet-count-7 {
+    background-color: #A7C8EE;
+    font-size: 2.5em;
+    
+}
+
 li.facet-item .facet-count-8,
-li.facet-item .facet-count-9 {
-    font-size: 1.7em;
+li.facet-item .facet-count-9,
+li.facet-item .facet-count-10 {
+    background-color: #FE9C00;
+    font-size: 2.7em;
     
 }
 
-li.facet-item .facet-count-10,
-li.facet-item .facet-count-11,
-li.facet-item .facet-count-12,
-li.facet-item .facet-count-13,
-li.facet-item .facet-count-14,
-li.facet-item .facet-count-15,
-li.facet-item .facet-count-16,
-li.facet-item .facet-count-17 {
-    font-size: 2em;
-    
+#block-tagcoraggio > ul > li > a > span.facet-item__value  {
+    color: #000000;
 }
 
+.views-row .clearfix {
 
-
-
+    font-size: 4em;
+}
 
 
 li.facet-item {

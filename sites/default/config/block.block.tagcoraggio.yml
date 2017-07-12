@@ -6,6 +6,7 @@ dependencies:
     - facets_summary.facets_summary.tag_coraggio
   module:
     - facets_summary
+    - system
   theme:
     - drupal8_zymphonies_theme
 id: tagcoraggio
@@ -18,5 +19,10 @@ settings:
   id: 'facets_summary_block:tag_coraggio'
   label: 'tag coraggio'
   provider: facets_summary
-  label_display: visible
-visibility: {  }
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
