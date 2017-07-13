@@ -1,0 +1,31 @@
+uuid: fde556e1-9002-4afe-9939-d1a99438ba07
+langcode: it
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:94e0ce34-0b74-4e97-b299-d8412b5d6096'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupal8_zymphonies_theme
+id: navigaletag
+theme: drupal8_zymphonies_theme
+region: highlighted
+weight: -7
+provider: null
+plugin: 'block_content:94e0ce34-0b74-4e97-b299-d8412b5d6096'
+settings:
+  id: 'block_content:94e0ce34-0b74-4e97-b299-d8412b5d6096'
+  label: 'Naviga le TAG'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
